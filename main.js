@@ -71,7 +71,7 @@ var routes = [
     {
         path: 'myproject_angular_demo_qqmusic',
         pathMatch: 'full',
-        redirectTo: 'home'
+        redirectTo: 'myproject_angular_demo_qqmusic/home'
     },
     {
         path: '**',
@@ -395,11 +395,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var HomeComponent = /** @class */ (function () {
     function HomeComponent() {
-        this.list = ['https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/banner1.jpg',
-            'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/banner2.jpg',
-            'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/banner3.jpg',
-            'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/banner4.jpg',
-            'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/banner5.jpg'];
+        this.list = ['https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/banner1.jpg',
+            'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/banner2.jpg',
+            'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/banner3.jpg',
+            'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/banner4.jpg',
+            'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/banner5.jpg'];
     }
     HomeComponent.prototype.ngOnInit = function () {
     };
@@ -465,27 +465,27 @@ var NewsComponent = /** @class */ (function () {
     function NewsComponent() {
         this.list = [
             {
-                name: '巅峰榜·流行指数', src: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/1.jpg',
+                name: '巅峰榜·流行指数', src: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/1.jpg',
                 lists: [{ a: '那一夜', b: '邓紫棋' }, { a: '梦不落雨林', b: '张艺兴' }, { a: '归去来兮', b: '叶炫清' }]
             },
             {
-                name: '巅峰榜·热歌', src: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/2.jpg',
+                name: '巅峰榜·热歌', src: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/2.jpg',
                 lists: [{ a: '没说什么', b: '张杰' }, { a: '耳朵', b: '李荣浩' }, { a: '光年之外', b: '邓紫棋' }]
             },
             {
-                name: '巅峰榜·新歌', src: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/3.jpg',
+                name: '巅峰榜·新歌', src: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/3.jpg',
                 lists: [{ a: '耳朵', b: '李荣浩' }, { a: '没说什么', b: '张杰' }, { a: '那一夜', b: '邓紫棋' }]
             },
             {
-                name: '巅峰榜·网络歌曲', src: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/4.jpg',
+                name: '巅峰榜·网络歌曲', src: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/4.jpg',
                 lists: [{ a: '不在', b: '韩安旭' }, { a: '地铁等待', b: '宋孟君' }, { a: '可不可以', b: '艾辰' }]
             },
             {
-                name: '巅峰榜·欧美', src: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/1.jpg',
+                name: '巅峰榜·欧美', src: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/1.jpg',
                 lists: [{ a: 'Kiss and Make Up', b: 'Dua Lipe' }, { a: '1999', b: 'Charli XCX' }, { a: 'im Still Here', b: 'Sia' }]
             },
             {
-                name: '巅峰榜·内地', src: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/9.jpg',
+                name: '巅峰榜·内地', src: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/9.jpg',
                 lists: [{ a: '耳朵', b: '李荣浩' }, { a: '没说什么', b: '张杰' }, { a: '贝贝', b: '李荣浩' }]
             },
         ];
@@ -602,27 +602,27 @@ var NewscontComponent = /** @class */ (function () {
         ];
         this.arr = [
             {
-                pic: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/1.jpg', title: '欧美', day: '300', date: '2018-10-27',
+                pic: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/1.jpg', title: '欧美', day: '300', date: '2018-10-27',
                 list: this.musicArr
             },
             {
-                pic: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/2.jpg', title: '热歌', day: '300', date: '2018-10-27',
+                pic: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/2.jpg', title: '热歌', day: '300', date: '2018-10-27',
                 list: this.musicArr
             },
             {
-                pic: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/3.jpg', title: '新歌', day: '300', date: '2018-10-27',
+                pic: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/3.jpg', title: '新歌', day: '300', date: '2018-10-27',
                 list: this.musicArr
             },
             {
-                pic: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/4.jpg', title: '网络歌曲', day: '300', date: '2018-10-27',
+                pic: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/4.jpg', title: '网络歌曲', day: '300', date: '2018-10-27',
                 list: this.musicArr
             },
             {
-                pic: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/1.jpg', title: '欧美', day: '300', date: '2018-10-27',
+                pic: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/1.jpg', title: '欧美', day: '300', date: '2018-10-27',
                 list: this.musicArr
             },
             {
-                pic: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic//assets/img/9.jpg', title: '内地', day: '300', date: '2018-10-27',
+                pic: 'https://coder-linshun.github.io/myproject_angular_demo_qqmusic/assets/img/9.jpg', title: '内地', day: '300', date: '2018-10-27',
                 list: this.musicArr
             },
         ];
