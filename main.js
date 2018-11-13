@@ -70,7 +70,8 @@ var routes = [
     },
     {
         path: 'myproject_angular_demo_qqmusic',
-        component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"]
+        redirectTo: 'myproject_angular_demo_qqmusic/home',
+        pathMatch: 'full'
     },
     {
         path: '**',
@@ -164,16 +165,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _services_storage_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/storage.service */ "./src/app/services/storage.service.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/home/home.component */ "./src/app/components/home/home.component.ts");
-/* harmony import */ var _components_news_news_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/news/news.component */ "./src/app/components/news/news.component.ts");
-/* harmony import */ var _components_user_user_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/user/user.component */ "./src/app/components/user/user.component.ts");
-/* harmony import */ var _components_err_err_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/err/err.component */ "./src/app/components/err/err.component.ts");
-/* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/header/header.component */ "./src/app/components/header/header.component.ts");
-/* harmony import */ var _components_newscont_newscont_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/newscont/newscont.component */ "./src/app/components/newscont/newscont.component.ts");
+/* harmony import */ var _services_storage_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/storage.service */ "./src/app/services/storage.service.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/home/home.component */ "./src/app/components/home/home.component.ts");
+/* harmony import */ var _components_news_news_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/news/news.component */ "./src/app/components/news/news.component.ts");
+/* harmony import */ var _components_user_user_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/user/user.component */ "./src/app/components/user/user.component.ts");
+/* harmony import */ var _components_err_err_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/err/err.component */ "./src/app/components/err/err.component.ts");
+/* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/header/header.component */ "./src/app/components/header/header.component.ts");
+/* harmony import */ var _components_newscont_newscont_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/newscont/newscont.component */ "./src/app/components/newscont/newscont.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -183,7 +183,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-
+// import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 
 
@@ -199,21 +199,21 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
-                _components_home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"],
-                _components_news_news_component__WEBPACK_IMPORTED_MODULE_8__["NewsComponent"],
-                _components_user_user_component__WEBPACK_IMPORTED_MODULE_9__["UserComponent"],
-                _components_err_err_component__WEBPACK_IMPORTED_MODULE_10__["ErrComponent"],
-                _components_header_header_component__WEBPACK_IMPORTED_MODULE_11__["HeaderComponent"],
-                _components_newscont_newscont_component__WEBPACK_IMPORTED_MODULE_12__["NewscontComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
+                _components_home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"],
+                _components_news_news_component__WEBPACK_IMPORTED_MODULE_7__["NewsComponent"],
+                _components_user_user_component__WEBPACK_IMPORTED_MODULE_8__["UserComponent"],
+                _components_err_err_component__WEBPACK_IMPORTED_MODULE_9__["ErrComponent"],
+                _components_header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"],
+                _components_newscont_newscont_component__WEBPACK_IMPORTED_MODULE_11__["NewscontComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"]
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"]
             ],
-            providers: [_services_storage_service__WEBPACK_IMPORTED_MODULE_4__["StorageService"], { provide: _angular_common__WEBPACK_IMPORTED_MODULE_3__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_3__["HashLocationStrategy"] }],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
+            providers: [_services_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
