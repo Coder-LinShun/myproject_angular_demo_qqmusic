@@ -70,8 +70,7 @@ var routes = [
     },
     {
         path: 'myproject_angular_demo_qqmusic',
-        pathMatch: 'full',
-        redirectTo: 'myproject_angular_demo_qqmusic/home'
+        component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"]
     },
     {
         path: '**',
