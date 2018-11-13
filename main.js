@@ -648,6 +648,15 @@ var NewscontComponent = /** @class */ (function () {
                 $('#top').attr('class', 'top');
             }
         };
+	    window.document.ontouchmove = function () {
+            if (document.documentElement.scrollTop >= 191) {
+                $('#top').attr('class', 'top1');
+            }
+            else {
+                $('#top').attr('class', 'top');
+            }
+        };
+	    
     };
     NewscontComponent.prototype.end = function () {
         this.flag++;
